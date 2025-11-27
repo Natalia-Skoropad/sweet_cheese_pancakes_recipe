@@ -27,7 +27,10 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <a class="header-logo" href="/index.html">SweetRecipe</a>
+            <a class="logo header-logo" href="./index.html">
+                Sweet
+                <span class="part-logo">Recipe</span>
+            </a>
 
             <nav class="header-nav">
                 <ul class="header-nav-list">
@@ -56,13 +59,92 @@
         <section class="hero-section">
             <div class="container hero-section-container">
                 <h1 class="hero-section-title">Sweet cheese pancakes</h1>
-                <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-                    alt="Sweet cheese pancakes served with berries" width="320">
                 <p class="hero-section-text">
                     A light and gently sweet breakfast dish or a dessert for picky eaters.
                     With crispy coating and the light and soft inside, you get a lovely balance of flavors and textures.
                     These delicious pancakes pair perfectly with sour cream and fruit in pretty much any form.
                 </p>
+
+                <div class="hero-section-div">
+                    <div class="hero-section-info">
+                        <ul class="hero-section-info-list">
+                            <li class="hero-section-info-list-item">
+                                <svg class="hero-section-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-clock"></use>
+                                </svg>
+                                <p>20 min cooking</p>
+                            </li>
+
+                            <li class="hero-section-info-list-item">
+                                <svg class="hero-section-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-clock"></use>
+                                </svg>
+                                <p>10 min preparation</p>
+                            </li>
+                            <li class="hero-section-info-list-item">
+                                <svg class="hero-section-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-plate-utensils"></use>
+                                </svg>
+                                <p>6 servings</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="hero-section-info-list">
+                            <li class="hero-section-info-list-item">
+                                <a class="link-icon" href="#" target="_blank">
+                                    <svg class="hero-section-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook-logo"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero-section-info-list-item">
+                                <a class="link-icon" href="#" target="_blank">
+                                    <svg class="hero-section-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-telegram-logo"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero-section-info-list-item">
+                                <a class="link-icon" href="#" target="_blank">
+                                    <svg class="hero-section-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero-section-info-list-item">
+                                <a class="link-icon" href="#" target="_blank">
+                                    <svg class="hero-section-icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-link"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo section -->
+        <section class="photo-section">
+            <div class="container photo-section-container">
+                <h2 class="photo-section-title visually-hidden">Sweet cheese pancakes photos</h2>
+
+                <ul class="photo-section-list">
+                    <li class="photo-section-list-item">
+                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
+                            alt="Sweet cheese pancakes served with berries" width="450">
+                    </li>
+                    <li class="photo-section-list-item">
+                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
+                            alt="Sweet cheese pancakes served with berries" width="450">
+                    </li>
+                    <li class="photo-section-list-item">
+                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
+                            alt="Sweet cheese pancakes served with berries" width="450">
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -108,6 +190,33 @@
                     alt="A dark-haired man with a beard and mustache, wearing a blue shirt." />
                 <h3 class="author-name">Mark Guerrero</h3>
                 <p class="author-position">Cook's assistant</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi facilis molestias eius
+                    earum at officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi
+                    facilis molestias eius earum at officia.
+                </p>
+
+                <ul class="author-section-list">
+                    <li class="author-section-list-item">
+                        <span class="author-section-list-span">Servings</span>
+                        <span>6</span>
+                    </li>
+                    <li class="author-section-list-item">
+                        <span class="author-section-list-span">Energy value</span>
+                        <span>547 kcal</span>
+                    </li>
+                    <li class="author-section-list-item">
+                        <span class="author-section-list-span">Proteins</span>
+                        <span>25 g</span>
+                    </li>
+                    <li class="author-section-list-item">
+                        <span class="author-section-list-span">Fats</span>
+                        <span>32,3 g</span>
+                    </li>
+                    <li class="author-section-list-item">
+                        <span class="author-section-list-span">Carbohydrates</span>
+                        <span>35,3 g</span>
+                    </li>
+                </ul>
 
                 <a class="author-section-link" href=" https://instagram.com/goitclub" target="_blank">
                     Author's profile
@@ -135,7 +244,7 @@
                     <thead class="ingredients-section-table-thead">
                         <tr>
                             <th scope="col" rowspan="2">№ </th>
-                            <th scope="colgroup" colspan="2">For one serving of pancakes</th>
+                            <th scope="colgroup" colspan="2">For 6 servings of pancakes</th>
                         </tr>
                         <tr>
                             <th scope="col">Product name</th>
@@ -200,26 +309,31 @@
                     the
                     pan. If it sizzles, the temperature is right.
                 </p>
+
                 <ol class="directions-section-list">
                     <li class="directions-section-list-item">
+                        <span class="directions-section-list-span">Step 1</span>
                         <p class="directions-section-list-text">
                             Beat eggs, salt and sugar together in a bowl until smooth.
                         </p>
                     </li>
 
                     <li class="directions-section-list-item">
+                        <span class="directions-section-list-span">Step 2</span>
                         <p class="directions-section-list-text">
                             Add flour and farmer's cheese. Mix well until the dough is thick and sticky.
                         </p>
                     </li>
 
                     <li class="directions-section-list-item">
+                        <span class="directions-section-list-span">Step 3</span>
                         <p class="directions-section-list-text">
                             Heat a skillet over medium heat, add 2-3 tablespoon oil.
                         </p>
                     </li>
 
                     <li class="directions-section-list-item">
+                        <span class="directions-section-list-span">Step 4</span>
                         <p class="directions-section-list-text">
                             Divide dough into portions, form into balls and coat with some flour. With well-floured
                             hands,
@@ -228,12 +342,14 @@
                     </li>
 
                     <li class="directions-section-list-item">
+                        <span class="directions-section-list-span">Step 5</span>
                         <p class="directions-section-list-text">
                             Once the oil is hot, place the discs and fry until golden brown, 3-5 minutes each side.
                         </p>
                     </li>
 
                     <li class="directions-section-list-item">
+                        <span class="directions-section-list-span">Step 6</span>
                         <p class="directions-section-list-text">
                             Serve with your favorite toppings - jam, sour cream, or fruits and berries.
                         </p>
@@ -304,7 +420,10 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="container footer-container">
-                <a class="footer-logo" href="/index.html">SweetRecipe</a>
+                <a class="logo footer-logo" href="./index.html">
+                    Sweet
+                    <span class="part-logo">Recipe</span>
+                </a>
 
                 <nav class="footer-nav">
                     <ul class="footer-nav-list">
@@ -327,24 +446,27 @@
                 </nav>
 
                 <ul class="footer-social-list">
-                    <li class="footer-social-list-item">
-                        <a class="footer-sociall-list-item-link" href="https://www.instagram.com/" target="_blank">
-                            <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04insta.svg"
-                                alt="Instagram" width="32" height="32">
+                    <li class="hero-section-info-list-item">
+                        <a class="link-icon" href="#" target="_blank">
+                            <svg class="footer-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook-logo"></use>
+                            </svg>
                         </a>
                     </li>
 
-                    <li class="footer-social-list-item">
-                        <a class="footer-social-list-item-link" href="https://www.facebook.com/" target="_blank">
-                            <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04facebook.svg"
-                                alt="Facebook" width="32" height="32">
+                    <li class="hero-section-info-list-item">
+                        <a class="link-icon" href="#" target="_blank">
+                            <svg class="footer-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram-logo"></use>
+                            </svg>
                         </a>
                     </li>
 
-                    <li class="footer-social-list-item">
-                        <a class="footer-social-list-item-link" href="https://www.youtube.com/" target="_blank">
-                            <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/b04youtube.svg"
-                                alt="YouTube" width="32" height="32">
+                    <li class="hero-section-info-list-item">
+                        <a class="link-icon" href="#" target="_blank">
+                            <svg class="footer-icon" width="27" height="27">
+                                <use href="./images/icons.svg#icon-youtube-logo"></use>
+                            </svg>
                         </a>
                     </li>
                 </ul>
