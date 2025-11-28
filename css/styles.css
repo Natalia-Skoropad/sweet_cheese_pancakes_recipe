@@ -26,11 +26,21 @@ a {
   color: currentColor;
 }
 
+input,
+textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
 button {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: inherit;
+  color: currentColor;
   border: none;
 
   display: block;
@@ -85,6 +95,7 @@ body {
 .ingredients-section,
 .directions-section,
 .tips-section,
+.form-section,
 .footer {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -142,8 +153,30 @@ button {
   padding: 20px 0;
 }
 
-/* Hero section */
+/* Breadcrumbs section */
+.breadcrumbs-section-list {
+  display: flex;
+  align-items: center;
+}
 
+.breadcrumbs-section-list-item {
+  font-size: 14px;
+  display: block;
+}
+
+.breadcrumbs-section-list-item p {
+  text-decoration: underline;
+  color: #4d5ae5;
+}
+
+.breadcrumbs-section-list-item a:after {
+  content: '  /   ';
+  color: #2e2f42;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+/* Hero section */
 .hero-section {
   padding: 50px 0;
   color: #ffffff;
@@ -194,7 +227,7 @@ button {
 }
 
 .photo-section-list-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 /* Anchor section */
@@ -232,6 +265,45 @@ button {
 .tips-section-list-item {
   display: block;
   width: calc((100% - 2 * 20px) / 3);
+}
+
+/* Feedback section */
+.feedback-section-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 15px;
+  border: 1px solid #434455;
+  max-width: 500px;
+}
+
+.feedback-section-form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+}
+
+.feedback-section-form-input {
+  padding: 10px;
+  color: #434455;
+  border: 1px solid #434455;
+  border-radius: 5px;
+}
+
+.feedback-section-form-input:focus-within {
+  border-color: #4d5ae5;
+}
+
+.feedback-section-form-input::placeholder {
+  color: #434455;
+}
+
+/* Navigation buttons section */
+.navigation-section-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Footer */
