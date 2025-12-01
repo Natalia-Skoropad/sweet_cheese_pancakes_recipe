@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <meta name="description" content="A light and gently sweet breakfast dish or a dessert for picky eaters" />
+    <meta name="description"
+        content="Light and gently sweet cottage cheese pancakes with a crispy crust and soft, creamy center. Perfect for breakfast or dessert." />
     <title>Sweet cheese pancakes recipe</title>
 
     <!-- Google Fonts -->
@@ -31,13 +32,21 @@
                 Sweet<span class="part-logo">Recipe</span>
             </a>
 
+            <button class="header-burger-button" type="button" data-menu-open>
+                <svg class="header-burger-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-menu-button"></use>
+                </svg>
+            </button>
+
             <nav class="header-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-list-item">
                         <a class="header-nav-list-item-link" href="/index.html">Home</a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="header-nav-list-item-link" href="#">Recipes</a>
+                        <a class="header-nav-list-item-link header-nav-list-item-link--active" href="#">
+                            Recipes
+                        </a>
                     </li>
                     <li class="header-nav-list-item">
                         <a class="header-nav-list-item-link" href="#">Authors</a>
@@ -50,6 +59,36 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu-container">
+                    <button class="mobile-menu-close-button" type="button" data-menu-close>
+                        <svg class="icon-mobile-menu-close-button" width="15" height="15">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="list-nav-mobile-menu">
+                        <li class="header-nav-list-item">
+                            <a class="header-nav-list-item-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="header-nav-list-item">
+                            <a class="header-nav-list-item-link header-nav-list-item-link--active" href="#">
+                                Recipes
+                            </a>
+                        </li>
+                        <li class="header-nav-list-item">
+                            <a class="header-nav-list-item-link" href="#">Authors</a>
+                        </li>
+                        <li class="header-nav-list-item">
+                            <a class="header-nav-list-item-link" href="#">Tips</a>
+                        </li>
+                        <li class="header-nav-list-item">
+                            <a class="header-nav-list-item-link" href="#">About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -77,15 +116,12 @@
         <!-- Hero section -->
         <section class="hero-section">
             <div class="container hero-section-container">
-                <h1 class="hero-section-title">Sweet cheese pancakes</h1>
-                <p class="hero-section-text">
-                    A light and gently sweet breakfast dish or a dessert for picky eaters.
-                    With crispy coating and the light and soft inside, you get a lovely balance of flavors and textures.
-                    These delicious pancakes pair perfectly with sour cream and fruit in pretty much any form.
-                </p>
 
-                <div class="hero-section-div">
-                    <div class="hero-section-info">
+                <div class="hero-section-top">
+                    <!-- LEFT TEXT COLUMN -->
+                    <div class="hero-section-left">
+                        <h1 class="hero-section-title">Sweet cheese pancakes</h1>
+
                         <ul class="hero-section-info-list">
                             <li class="hero-section-info-list-item">
                                 <svg class="hero-section-icon" width="20" height="20">
@@ -100,6 +136,7 @@
                                 </svg>
                                 <p>10 min preparation</p>
                             </li>
+
                             <li class="hero-section-info-list-item">
                                 <svg class="hero-section-icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-plate-utensils"></use>
@@ -107,41 +144,73 @@
                                 <p>6 servings</p>
                             </li>
                         </ul>
+
+                        <p class="hero-section-text">
+                            Light and gently sweet cottage cheese pancakes with a golden, crispy crust and a soft,
+                            creamy center. Perfect for breakfast or dessert, they taste amazing with sour cream,
+                            fresh berries, or your favorite jam.
+                        </p>
                     </div>
 
-                    <div>
-                        <ul class="hero-section-info-list">
-                            <li class="hero-section-info-list-item">
-                                <a class="link-icon" href="#" target="_blank">
-                                    <svg class="hero-section-icon" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-facebook-logo"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="hero-section-info-list-item">
-                                <a class="link-icon" href="#" target="_blank">
-                                    <svg class="hero-section-icon" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-telegram-logo"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="hero-section-info-list-item">
-                                <a class="link-icon" href="#" target="_blank">
-                                    <svg class="hero-section-icon" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="hero-section-info-list-item">
-                                <a class="link-icon" href="#" target="_blank">
-                                    <svg class="hero-section-icon" width="20" height="20">
-                                        <use href="./images/icons.svg#icon-link"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- RIGHT IMAGE -->
+                    <img class="hero-section-photo"
+                        src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
+                        alt="Plate with sweet cheese pancakes topped with berries." />
                 </div>
+
+                <!-- ENERGY + SOCIALS ROW -->
+                <div class="hero-section-bottom-row">
+                    <ul class="hero-section-energy-list">
+                        <li class="hero-section-energy-list-item">
+                            <span class="hero-section-energy-list-span">Energy value</span>
+                            <span>547 kcal</span>
+                        </li>
+                        <li class="hero-section-energy-list-item">
+                            <span class="hero-section-energy-list-span">Proteins</span>
+                            <span>25 g</span>
+                        </li>
+                        <li class="hero-section-energy-list-item">
+                            <span class="hero-section-energy-list-span">Fats</span>
+                            <span>32.3 g</span>
+                        </li>
+                        <li class="hero-section-energy-list-item">
+                            <span class="hero-section-energy-list-span">Carbohydrates</span>
+                            <span>35.3 g</span>
+                        </li>
+                    </ul>
+
+                    <ul class="hero-section-social-list">
+                        <li>
+                            <a class="link-icon" href="#" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" aria-label="Icon Twitter">
+                                    <use href="./images/icons.svg#icon-facebook-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-icon" href="#" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" aria-label="Icon Telegram">
+                                    <use href="./images/icons.svg#icon-telegram-logo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-icon" href="#" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" aria-label="Icon Linkedin">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-icon" href="#" target="_blank" rel="noopener noreferrer">
+                                <svg width="20" height="20" aria-label="Icon Link">
+                                    <use href="./images/icons.svg#icon-link"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </section>
 
@@ -167,7 +236,7 @@
             </div>
         </section>
 
-        <!-- Anchor section -->
+        <!-- Anchor section
         <section class="anchor-section">
             <div class="container anchor-section-container">
                 <ul class="anchor-section-list">
@@ -196,50 +265,35 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Author section -->
         <section class="author-section">
             <div class="container author-section-container">
                 <h2 class="author-section-title" id="author">
-                    Author of the sweet recipe
+                    Meet the author of this sweet recipe
                 </h2>
+                <div class="author-section-div">
+                    <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" width="264"
+                        alt="Portrait of Mark Guerrero, assistant cook" />
+                    <div>
+                        <h3 class="author-name">Mark Guerrero</h3>
+                        <p class="author-position">Cook's assistant</p>
+                        <p class="author-description">
+                            Mark has been working in a family café for over 7 years and loves simple, comforting food.
+                            His favorite recipes are the ones you can cook quickly in the morning and still make
+                            everyone at
+                            the
+                            table happy.
+                        </p>
 
-                <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" width="264"
-                    alt="A dark-haired man with a beard and mustache, wearing a blue shirt." />
-                <h3 class="author-name">Mark Guerrero</h3>
-                <p class="author-position">Cook's assistant</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi facilis molestias eius
-                    earum at officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque excepturi
-                    facilis molestias eius earum at officia.
-                </p>
+                        <a class="author-section-link" href="#" target="_blank">
+                            Author's profile
+                        </a>
+                    </div>
+                </div>
 
-                <ul class="author-section-list">
-                    <li class="author-section-list-item">
-                        <span class="author-section-list-span">Servings</span>
-                        <span>6</span>
-                    </li>
-                    <li class="author-section-list-item">
-                        <span class="author-section-list-span">Energy value</span>
-                        <span>547 kcal</span>
-                    </li>
-                    <li class="author-section-list-item">
-                        <span class="author-section-list-span">Proteins</span>
-                        <span>25 g</span>
-                    </li>
-                    <li class="author-section-list-item">
-                        <span class="author-section-list-span">Fats</span>
-                        <span>32,3 g</span>
-                    </li>
-                    <li class="author-section-list-item">
-                        <span class="author-section-list-span">Carbohydrates</span>
-                        <span>35,3 g</span>
-                    </li>
-                </ul>
 
-                <a class="author-section-link" href=" https://instagram.com/goitclub" target="_blank">
-                    Author's profile
-                </a>
             </div>
         </section>
 
@@ -247,7 +301,7 @@
         <section class="ingredients-section">
             <div class="container ingredients-section-container">
                 <h2 class="ingredients-section-title" id="ingredients">
-                    Ingredients
+                    What you’ll need for these pancakes
                 </h2>
                 <p class="ingredients-section-text">
                     The right choice of cheese is extremely important for this dish. Farmer's cheese will suit best.
@@ -321,7 +375,7 @@
         <section class="directions-section">
             <div class="container directions-section-container">
                 <h2 class="directions-section-title" id="directions">
-                    Directions
+                    How to cook sweet cheese pancakes step by step
                 </h2>
                 <p class="directions-section-text">
                     Before frying, make sure the oil in the skillet is hot. Test it by sprinkling a bit of flour into
@@ -380,7 +434,9 @@
         <!-- Tips section -->
         <section class="tips-section">
             <div class="container tips-section-container">
-                <h2 class="tips-section-title" id="tips">Cooking tips</h2>
+                <h2 class="tips-section-title" id="tips">
+                    Helpful tips for perfect pancakes
+                </h2>
                 <p class="tips-section-text">
                     To make fluffy pancakes, mix the dry and wet ingredients separately, but don't overmix the batter or
                     it will become
@@ -439,25 +495,125 @@
         <!-- Feedback section -->
         <section class="feedback-section">
             <div class="container feedback-section-container">
-                <h2 class="feedback-section-title">Leave us a comment about this dish</h2>
-                <p class="feedback-section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro atque
-                    excepturi facilis molestias eius
-                    earum at officia.
+                <h2 class="feedback-section-title">
+                    Tell us how your pancakes turned out
+                </h2>
+                <p class="feedback-section-text">
+                    Share your experience with this recipe: what you changed, how it turned out, and what you served it
+                    with.
+                    Your feedback helps other home cooks.
                 </p>
 
                 <form class="feedback-section-form" name="feedback_form" autocomplete="off" novalidate>
                     <label class="feedback-section-form-label">
-                        Your name
+                        Your name*
                         <input class="feedback-section-form-input" type="text" name="username"
-                            placeholder="Enter your name" autofocus>
+                            placeholder="Enter your name" autofocus minlength="2" maxlength="20" required>
                     </label>
 
                     <label class="feedback-section-form-label">
-                        <textarea name="" id=""></textarea>
+                        Your email*
+                        <input class="feedback-section-form-input" type="email" name="user_email"
+                            placeholder="Enter your email" minlength="5" maxlength="80" required>
+                    </label>
+
+                    <label class="feedback-section-form-label">
+                        Did you like the dish?*
+                        <select class="feedback-section-form-input" required>
+                            <option value="0">I loved it – definitely recommend</option>
+                            <option value="1">It was good – I can recommend it</option>
+                            <option value="2">It was ok – not sure I’d recommend</option>
+                            <option value="3">I didn’t like it – wouldn’t recommend</option>
+                        </select>
+                    </label>
+
+                    <label class="feedback-section-form-label">
+                        Your feedback*
+                        <textarea class="feedback-section-form-input" name="description" rows="7"
+                            placeholder="Write to us about this dish" minlength="10" maxlength="500"
+                            required></textarea>
                     </label>
 
                     <button class="feedback-section-form-button" type="submit">Send feedback</button>
                 </form>
+            </div>
+        </section>
+
+        <!-- Other recipes section -->
+        <section class="other-recipes-section">
+            <div class="container other-recipes-section-container">
+                <h2 class="other-recipes-title">More cozy breakfast ideas</h2>
+
+                <ul class="other-recipes-list">
+                    <li class="other-recipes-section-list-item">
+                        <a href="#" class="other-recipes-link">
+                            <div class="other-recipes-thumb">
+                                <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
+                                    alt="Sweet cheese pancakes served with berries" width="450">
+
+                                <div class="other-recipes-section-list-div">
+                                    <h3>Banana oat pancakes</h3>
+                                    <p>Author: Emma Stone</p>
+                                </div>
+
+                                <div class="other-recipes-section-list-overlay">
+                                    <h3>Banana oat pancakes</h3>
+                                    <p>Author: Emma Stone</p>
+                                    <p>
+                                        Delicate pancakes with oats and ripe bananas. A great option for a quick,
+                                        healthy breakfast without added sugar.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="other-recipes-section-list-item">
+                        <a href="#" class="other-recipes-link">
+                            <div class="other-recipes-thumb">
+                                <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
+                                    alt="Sweet cheese pancakes served with berries" width="450">
+
+                                <div class="other-recipes-section-list-div">
+                                    <h3>Classic buttermilk pancakes</h3>
+                                    <p>Author: Daniel Green</p>
+                                </div>
+
+                                <div class="other-recipes-section-list-overlay">
+                                    <h3>Classic buttermilk pancakes</h3>
+                                    <p>Author: Daniel Green</p>
+                                    <p>
+                                        Airy, fluffy pancakes with a light buttery aroma. Serve with maple syrup,
+                                        berries, or a knob of butter.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="other-recipes-section-list-item">
+                        <a href="#" class="other-recipes-link">
+                            <div class="other-recipes-thumb">
+                                <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
+                                    alt="Sweet cheese pancakes served with berries" width="450">
+
+                                <div class="other-recipes-section-list-div">
+                                    <h3>Chocolate chip pancakes</h3>
+                                    <p>Author: Olivia Brown</p>
+                                </div>
+
+                                <div class="other-recipes-section-list-overlay">
+                                    <h3>Chocolate chip pancakes</h3>
+                                    <p>Author: Olivia Brown</p>
+                                    <p>
+                                        Soft pancakes with melting chocolate chips inside — a perfect treat for kids and
+                                        anyone with a sweet tooth.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -530,6 +686,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
