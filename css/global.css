@@ -1,0 +1,58 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #2e2f42;
+  background-color: #fffaf5;
+  margin: 0;
+}
+
+.hero-section,
+.photo-section,
+.anchor-section,
+.author-section,
+.ingredients-section,
+.directions-section,
+.tips-section,
+.feedback-section,
+.other-recipes-section,
+.navigation-section,
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.03em;
+  color: #1f2933;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+nav,
+button {
+  text-transform: capitalize;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f97316;
+}

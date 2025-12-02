@@ -26,65 +26,104 @@
 
 <body>
     <!-- Header -->
-    <header>
+    <header class="site-header">
         <div class="container header-container">
             <a class="logo header-logo" href="./index.html">
                 Sweet<span class="part-logo">Recipe</span>
             </a>
 
-            <button class="header-burger-button" type="button" data-menu-open>
-                <svg class="header-burger-icon" width="20" height="20">
+            <!-- Burger button (mobile) -->
+            <button class="header-burger-button" type="button" data-menu-open aria-label="Open main menu"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="header-burger-button-icon" width="20" height="20" aria-label="Icon Burger Button">
                     <use href="./images/icons.svg#icon-menu-button"></use>
                 </svg>
             </button>
 
-            <nav class="header-nav">
+            <!-- Desktop / tablet navigation -->
+            <nav class="header-nav" aria-label="Main navigation">
                 <ul class="header-nav-list">
                     <li class="header-nav-list-item">
-                        <a class="header-nav-list-item-link" href="/index.html">Home</a>
+                        <a class="header-nav-list-item-link nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="header-nav-list-item-link header-nav-list-item-link--active" href="#">
-                            Recipes
-                        </a>
+                        <a class="header-nav-list-item-link nav-link nav-link--active" href="#">Recipes</a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="header-nav-list-item-link" href="#">Authors</a>
+                        <a class="header-nav-list-item-link nav-link" href="#">Authors</a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="header-nav-list-item-link" href="#">Tips</a>
+                        <a class="header-nav-list-item-link nav-link" href="#">Tips</a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="header-nav-list-item-link" href="#">About us</a>
+                        <a class="header-nav-list-item-link nav-link" href="#">About us</a>
                     </li>
                 </ul>
             </nav>
 
-            <div class="mobile-menu" data-menu>
+            <!-- Mobile menu -->
+            <div class="mobile-menu" id="mobile-menu" data-menu>
                 <div class="container mobile-menu-container">
-                    <button class="mobile-menu-close-button" type="button" data-menu-close>
-                        <svg class="icon-mobile-menu-close-button" width="15" height="15">
-                            <use href="./images/icons.svg#icon-close"></use>
-                        </svg>
-                    </button>
+                    <div class="mobile-menu-header">
+                        <a class="logo mobile-menu-logo" href="./index.html">
+                            Sweet<span class="part-logo">Recipe</span>
+                        </a>
 
-                    <ul class="list-nav-mobile-menu">
-                        <li class="header-nav-list-item">
-                            <a class="header-nav-list-item-link" href="/index.html">Home</a>
-                        </li>
-                        <li class="header-nav-list-item">
-                            <a class="header-nav-list-item-link header-nav-list-item-link--active" href="#">
-                                Recipes
+                        <button class="mobile-menu-close-button" type="button" data-menu-close
+                            aria-label="Close main menu">
+                            <svg class="mobile-menu-close-button-icon" width="15" height="15"
+                                aria-label="Icon Close Button">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <nav aria-label="Mobile main navigation">
+                        <ul class="mobile-menu-nav-list">
+                            <li class="mobile-menu-nav-list-item">
+                                <a class="mobile-menu-nav-list-item-link nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="mobile-menu-nav-list-item">
+                                <a class="mobile-menu-nav-list-item-link nav-link nav-link--active" href="#">Recipes</a>
+                            </li>
+                            <li class="mobile-menu-nav-list-item">
+                                <a class="mobile-menu-nav-list-item-link nav-link" href="#">Authors</a>
+                            </li>
+                            <li class="mobile-menu-nav-list-item">
+                                <a class="mobile-menu-nav-list-item-link nav-link" href="#">Tips</a>
+                            </li>
+                            <li class="mobile-menu-nav-list-item">
+                                <a class="mobile-menu-nav-list-item-link nav-link" href="#">About us</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="mobile-menu-social-list">
+                        <li class="mobile-menu-social-list-item">
+                            <a class="mobile-menu-social-list-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <svg class="mobile-menu-social-list-icon" width="20" height="20"
+                                    aria-label="Icon Facebook">
+                                    <use href="./images/icons.svg#icon-facebook-logo"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="header-nav-list-item">
-                            <a class="header-nav-list-item-link" href="#">Authors</a>
+
+                        <li class="mobile-menu-social-list-item">
+                            <a class="mobile-menu-social-list-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <svg class="mobile-menu-social-list-icon" width="20" height="20"
+                                    aria-label="Icon Instagram">
+                                    <use href="./images/icons.svg#icon-instagram-logo"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="header-nav-list-item">
-                            <a class="header-nav-list-item-link" href="#">Tips</a>
-                        </li>
-                        <li class="header-nav-list-item">
-                            <a class="header-nav-list-item-link" href="#">About us</a>
+
+                        <li class="mobile-menu-social-list-item">
+                            <a class="mobile-menu-social-list-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <svg class="mobile-menu-social-list-icon" width="27" height="27"
+                                    aria-label="Icon Youtube">
+                                    <use href="./images/icons.svg#icon-youtube-logo"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -98,7 +137,12 @@
             <div class="container breadcrumbs-section-container">
                 <ul class="breadcrumbs-section-list">
                     <li class="breadcrumbs-section-list-item">
-                        <a class="breadcrumbs-section-list-item-link" href="/index.html">Home</a>
+                        <a class="breadcrumbs-section-list-item-link" href="./index.html">
+                            <svg class="breadcrumbs-home-icon" width="12" height="12" aria-label="Home">
+                                <use href="./images/icons.svg#icon-home"></use>
+                            </svg>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li class="breadcrumbs-section-list-item">
                         <a class="breadcrumbs-section-list-item-link" href="#">Dishes</a>
@@ -116,29 +160,27 @@
         <!-- Hero section -->
         <section class="hero-section">
             <div class="container hero-section-container">
-
                 <div class="hero-section-top">
                     <!-- LEFT TEXT COLUMN -->
                     <div class="hero-section-left">
                         <h1 class="hero-section-title">Sweet cheese pancakes</h1>
-
                         <ul class="hero-section-info-list">
                             <li class="hero-section-info-list-item">
-                                <svg class="hero-section-icon" width="20" height="20">
+                                <svg class="hero-section-icon" width="20" height="20" aria-label="Icon Clock">
                                     <use href="./images/icons.svg#icon-clock"></use>
                                 </svg>
                                 <p>20 min cooking</p>
                             </li>
 
                             <li class="hero-section-info-list-item">
-                                <svg class="hero-section-icon" width="20" height="20">
+                                <svg class="hero-section-icon" width="20" height="20" aria-label="Icon Clock">
                                     <use href="./images/icons.svg#icon-clock"></use>
                                 </svg>
                                 <p>10 min preparation</p>
                             </li>
 
                             <li class="hero-section-info-list-item">
-                                <svg class="hero-section-icon" width="20" height="20">
+                                <svg class="hero-section-icon" width="20" height="20" aria-label="Icon Plate Utensils">
                                     <use href="./images/icons.svg#icon-plate-utensils"></use>
                                 </svg>
                                 <p>6 servings</p>
@@ -153,9 +195,23 @@
                     </div>
 
                     <!-- RIGHT IMAGE -->
-                    <img class="hero-section-photo"
-                        src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-                        alt="Plate with sweet cheese pancakes topped with berries." />
+                    <picture class="hero-section-photo">
+                        <source srcset="
+                                ./images/home/plate-with-cheese-pancakes-topped-with-berries-desk.jpg     1x,
+                                ./images/home/plate-with-cheese-pancakes-topped-with-berries-desk@2x.jpg  2x
+                                " media="(min-width: 1158px)" />
+                        <source srcset="
+                                ./images/home/plate-with-cheese-pancakes-topped-with-berries-tab.jpg     1x,
+                                ./images/home/plate-with-cheese-pancakes-topped-with-berries-tab@2x.jpg  2x
+                                " media="(min-width: 768px)" />
+                        <source srcset="
+                                ./images/home/plate-with-cheese-pancakes-topped-with-berries-mobile.jpg     1x,
+                                ./images/home/plate-with-cheese-pancakes-topped-with-berries-mobile@2x.jpg  2x
+                                " media="(max-width: 767px)" />
+                        <img class="hero-photo"
+                            src="./images/home/plate-with-cheese-pancakes-topped-with-berries-mobile.jpg"
+                            alt="Plate with sweet cheese pancakes topped with berries" />
+                    </picture>
                 </div>
 
                 <!-- ENERGY + SOCIALS ROW -->
@@ -221,51 +277,63 @@
 
                 <ul class="photo-section-list">
                     <li class="photo-section-list-item">
-                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-                            alt="Sweet cheese pancakes served with berries" width="450">
+                        <picture class="hero-section-photo">
+                            <source srcset="
+                                    ./images/photos/plate-with-cheese-pancakes-topped-with-berries-desk.jpg     1x,
+                                    ./images/photos/plate-with-cheese-pancakes-topped-with-berries-desk@2x.jpg  2x
+                                    " media="(min-width: 1158px)" />
+                            <source srcset="
+                                    ./images/photos/plate-with-cheese-pancakes-topped-with-berries-tab.jpg     1x,
+                                    ./images/photos/plate-with-cheese-pancakes-topped-with-berries-tab@2x.jpg  2x
+                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                    ./images/photos/plate-with-cheese-pancakes-topped-with-berries-mobile.jpg     1x,
+                                    ./images/photos/plate-with-cheese-pancakes-topped-with-berries-mobile@2x.jpg  2x
+                                    " media="(max-width: 767px)" />
+                            <img class="hero-photo"
+                                src="./images/photos/plate-with-cheese-pancakes-topped-with-berries-mobile.jpg"
+                                alt="Plate with sweet cheese pancakes topped with berries" />
+                        </picture>
                     </li>
                     <li class="photo-section-list-item">
-                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-                            alt="Sweet cheese pancakes served with berries" width="450">
+                        <picture class="hero-section-photo">
+                            <source srcset="
+                                    ./images/photos/cheese-pancakes-served-with-berries-desk.jpg     1x,
+                                    ./images/photos/cheese-pancakes-served-with-berries-desk@2.jpg  2x
+                                    " media="(min-width: 1158px)" />
+                            <source srcset="
+                                    ./images/photos/cheese-pancakes-served-with-berries-tab.jpg     1x,
+                                    ./images/photos/cheese-pancakes-served-with-berries-tab@2x.jpg  2x
+                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                    ./images/photos/cheese-pancakes-served-with-berries-mobile.jpg     1x,
+                                    ./images/photos/cheese-pancakes-served-with-berries-mobile@2x.jpg  2x
+                                    " media="(max-width: 767px)" />
+                            <img class="hero-photo" src="./images/photos/cheese-pancakes-served-with-berries-mobile.jpg"
+                                alt="Sweet cheese pancakes served with berries" />
+                        </picture>
                     </li>
                     <li class="photo-section-list-item">
-                        <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-                            alt="Sweet cheese pancakes served with berries" width="450">
+                        <picture class="hero-section-photo">
+                            <source srcset="
+                                        ./images/photos/cheese-pancakes-with-berries-desk.jpg     1x,
+                                        ./images/photos/cheese-pancakes-with-berries-desk@2x.jpg  2x
+                                        " media="(min-width: 1158px)" />
+                            <source srcset="
+                                        ./images/photos/cheese-pancakes-with-berries-tab.jpg     1x,
+                                        ./images/photos/cheese-pancakes-with-berries-tab@2x.jpg  2x
+                                        " media="(min-width: 768px)" />
+                            <source srcset="
+                                        ./images/photos/cheese-pancakes-with-berries-mobile.jpg     1x,
+                                        ./images/photos/cheese-pancakes-with-berries-mobile@2x.jpg  2x
+                                        " media="(max-width: 767px)" />
+                            <img class="hero-photo" src="./images/photos/cheese-pancakes-with-berries-mobile.jpg"
+                                alt="Sweet cheese pancakes with berries" />
+                        </picture>
                     </li>
                 </ul>
             </div>
         </section>
-
-        <!-- Anchor section
-        <section class="anchor-section">
-            <div class="container anchor-section-container">
-                <ul class="anchor-section-list">
-                    <li class="anchor-section-list-item">
-                        <a class="anchor-section-list-item-link" href="#author" target="_self">
-                            Recipe author
-                        </a>
-                    </li>
-
-                    <li class="anchor-section-list-item">
-                        <a class="anchor-section-list-item-link" href="#ingredients" target="_self">
-                            Recipe ingredients
-                        </a>
-                    </li>
-
-                    <li class="anchor-section-list-item">
-                        <a class="anchor-section-list-item-link" href="#directions" target="_self">
-                            Cooking directions
-                        </a>
-                    </li>
-
-                    <li class="anchor-section-list-item">
-                        <a class="anchor-section-list-item-link" href="#tips" target="_self">
-                            Cooking tips
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section> -->
 
         <!-- Author section -->
         <section class="author-section">
@@ -274,8 +342,23 @@
                     Meet the author of this sweet recipe
                 </h2>
                 <div class="author-section-div">
-                    <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" width="264"
-                        alt="Portrait of Mark Guerrero, assistant cook" />
+                    <picture>
+                        <source srcset="
+                                ./images/photos/cheese-pancakes-with-berries-desk.jpg     1x,
+                                ./images/photos/cheese-pancakes-with-berries-desk@2x.jpg  2x
+                                " media="(min-width: 1158px)" />
+                        <source srcset="
+                                ./images/photos/cheese-pancakes-with-berries-tab.jpg     1x,
+                                ./images/photos/cheese-pancakes-with-berries-tab@2x.jpg  2x
+                                " media="(min-width: 768px)" />
+                        <source srcset="
+                                ./images/author/chef-with-beard-and-mustache-mobile.jpg     1x,
+                                ./images/author/chef-with-beard-and-mustache-mobile@2x.jpg  2x
+                                " media="(max-width: 767px)" />
+                        <img class="hero-photo" src="./images/author/chef-with-beard-and-mustache-mobile.jpg"
+                            alt="Portrait of Mark Guerrero, assistant cook" />
+                    </picture>
+
                     <div>
                         <h3 class="author-name">Mark Guerrero</h3>
                         <p class="author-position">Cook's assistant</p>
@@ -508,7 +591,7 @@
                     <label class="feedback-section-form-label">
                         Your name*
                         <input class="feedback-section-form-input" type="text" name="username"
-                            placeholder="Enter your name" autofocus minlength="2" maxlength="20" required>
+                            placeholder="Enter your name" minlength="2" maxlength="20" required>
                     </label>
 
                     <label class="feedback-section-form-label">
@@ -687,7 +770,7 @@
         </footer>
     </main>
 
-    <script src="./js/menu.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 
 </html>

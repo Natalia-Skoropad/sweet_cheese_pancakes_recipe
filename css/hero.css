@@ -1,0 +1,232 @@
+.hero-section {
+  background-color: #111827;
+  max-width: 320px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 245, 230, 0.96)
+    ),
+    url('../images/home/pancakes-mobile-bg.jpg');
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
+}
+
+@media (min-resolution: 2x) {
+  .banner {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.92),
+        rgba(255, 245, 230, 0.96)
+      ),
+      url('../images/home/pancakes-mobile-bg@2x.jpg');
+  }
+}
+
+/* TOP BLOCK: TEXT + IMAGE */
+.hero-section-top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.hero-section-left {
+  flex: 1 1 auto;
+}
+
+.hero-photo {
+  border-radius: 20px;
+}
+
+.hero-section-photo {
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
+  margin: 0 auto;
+}
+
+/* TITLE + TEXT */
+.hero-section-title {
+  max-width: 260px;
+  margin-bottom: 16px;
+}
+
+.hero-section-text {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* INFO BADGES */
+.hero-section-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-bottom: 16px;
+}
+
+.hero-section-info-list-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.hero-section-icon {
+  fill: #f97316;
+}
+
+/* ENERGY + SOCIAL ROW */
+.hero-section-bottom-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ENERGY CARDS */
+.hero-section-energy-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-section-energy-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  padding: 8px 10px;
+  min-width: 120px;
+
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  font-size: 12px;
+}
+
+.hero-section-energy-list-span {
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.hero-section-energy-list-item span:last-child {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* SOCIAL ICON ROW */
+.hero-section-social-list {
+  display: flex;
+  gap: 25px;
+}
+
+.link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background-color: #f97316;
+
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.link-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+}
+
+.link-icon svg {
+  fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.92),
+        rgba(255, 245, 230, 0.96)
+      ),
+      url('../images/home/pancakes-tab-bg.jpg');
+  }
+
+  @media (min-resolution: 2x) {
+    .banner {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.92),
+          rgba(255, 245, 230, 0.96)
+        ),
+        url('../images/home/pancakes-tab-bg@2x.jpg');
+    }
+  }
+
+  .hero-section-top {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-section-title {
+    font-size: 32px;
+    max-width: 360px;
+  }
+
+  .hero-section-text {
+    font-size: 15px;
+    max-width: 460px;
+  }
+
+  /* ENERGY + SOCIAL */
+  .hero-section-bottom-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    max-width: 1318px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.92),
+        rgba(255, 245, 230, 0.96)
+      ),
+      url('../images/home/pancakes-desk-bg.jpg');
+  }
+
+  @media (min-resolution: 2x) {
+    .banner {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.92),
+          rgba(255, 245, 230, 0.96)
+        ),
+        url('../images/home/pancakes-desk-bg@2x.jpg');
+    }
+  }
+
+  .hero-section-title {
+    font-size: 36px;
+  }
+
+  .hero-section-text {
+    max-width: 520px;
+  }
+}
