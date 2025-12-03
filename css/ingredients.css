@@ -1,0 +1,57 @@
+.ingredients-section-text {
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.ingredients-section-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
+}
+
+.ingredients-section-table-thead th {
+  padding: 10px 15px;
+  background-color: #ffedd5;
+  color: #7c2d12;
+  border-bottom: 1px solid #fed7aa;
+  text-align: start;
+}
+
+.ingredients-section-table th:first-child,
+.ingredients-section-table td:first-child {
+  width: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.ingredients-section-table-number {
+  text-align: center;
+}
+
+.ingredients-section-table-product-row td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.ingredients-section-table-product-row:nth-child(odd) {
+  background-color: #fff7ed;
+}
+
+.ingredients-section-table-product-row:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.ingredients-section-table-product-row:last-child td {
+  border-bottom: none;
+}
+
+.ingredients-section-icon {
+  display: block;
+  margin: 0 auto;
+  flex-shrink: 0;
+  fill: #f97316;
+}

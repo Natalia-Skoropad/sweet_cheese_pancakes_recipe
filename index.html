@@ -145,7 +145,7 @@
                         </a>
                     </li>
                     <li class="breadcrumbs-section-list-item">
-                        <a class="breadcrumbs-section-list-item-link" href="#">Dishes</a>
+                        <a class="breadcrumbs-section-list-item-link" href="#">Recipes</a>
                     </li>
                     <li class="breadcrumbs-section-list-item">
                         <a class="breadcrumbs-section-list-item-link" href="#">Breakfasts</a>
@@ -344,30 +344,35 @@
                 <div class="author-section-div">
                     <picture>
                         <source srcset="
-                                ./images/photos/cheese-pancakes-with-berries-desk.jpg     1x,
-                                ./images/photos/cheese-pancakes-with-berries-desk@2x.jpg  2x
-                                " media="(min-width: 1158px)" />
+                    ./images/author/chef-with-beard-and-mustache-desk.jpg     1x,
+                    ./images/author/chef-with-beard-and-mustache-desk@2x.jpg  2x
+                  " media="(min-width: 1158px)" />
                         <source srcset="
-                                ./images/photos/cheese-pancakes-with-berries-tab.jpg     1x,
-                                ./images/photos/cheese-pancakes-with-berries-tab@2x.jpg  2x
-                                " media="(min-width: 768px)" />
+                    ./images/author/chef-with-beard-and-mustache-tab.jpg     1x,
+                    ./images/author/chef-with-beard-and-mustache-tab@2x.jpg  2x
+                  " media="(min-width: 768px)" />
                         <source srcset="
-                                ./images/author/chef-with-beard-and-mustache-mobile.jpg     1x,
-                                ./images/author/chef-with-beard-and-mustache-mobile@2x.jpg  2x
-                                " media="(max-width: 767px)" />
+                    ./images/author/chef-with-beard-and-mustache-mobile.jpg     1x,
+                    ./images/author/chef-with-beard-and-mustache-mobile@2x.jpg  2x
+                  " media="(max-width: 767px)" />
                         <img class="hero-photo" src="./images/author/chef-with-beard-and-mustache-mobile.jpg"
                             alt="Portrait of Mark Guerrero, assistant cook" />
                     </picture>
 
                     <div>
-                        <h3 class="author-name">Mark Guerrero</h3>
+                        <div class="author-header">
+                            <h3 class="author-name">Mark Guerrero</h3>
+                            <svg class="author-icon" width="26" height="26" aria-label="Cook hat">
+                                <use href="./images/icons.svg#icon-cook-hat"></use>
+                            </svg>
+                        </div>
+
                         <p class="author-position">Cook's assistant</p>
                         <p class="author-description">
-                            Mark has been working in a family café for over 7 years and loves simple, comforting food.
-                            His favorite recipes are the ones you can cook quickly in the morning and still make
-                            everyone at
-                            the
-                            table happy.
+                            Mark has been working in a family café for over 7 years and loves
+                            simple, comforting food. His favorite recipes are the ones you can
+                            cook quickly in the morning and still make everyone at the table
+                            happy.
                         </p>
 
                         <a class="author-section-link" href="#" target="_blank">
@@ -375,8 +380,6 @@
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
@@ -394,15 +397,13 @@
                 </p>
 
                 <table class="ingredients-section-table">
-                    <caption class="ingredients-section-table-caption">
-                        Ingredients list for the cheese pancakes
-                    </caption>
                     <thead class="ingredients-section-table-thead">
                         <tr>
-                            <th scope="col" rowspan="2">№ </th>
-                            <th scope="colgroup" colspan="2">For 6 servings of pancakes</th>
-                        </tr>
-                        <tr>
+                            <th scope="col" rowspan="2">
+                                <svg class="ingredients-section-icon" width="30" height="30" aria-label="Ingredients">
+                                    <use href="./images/icons.svg#icon-ingredients"></use>
+                                </svg>
+                            </th>
                             <th scope="col">Product name</th>
                             <th scope="col">Quantity</th>
                         </tr>
@@ -410,42 +411,42 @@
 
                     <tbody>
                         <tr class="ingredients-section-table-product-row">
-                            <td>1</td>
+                            <td class="ingredients-section-table-number">1</td>
                             <td>Farmer's cheese</td>
                             <td>2 cups</td>
                         </tr>
                         <tr class="ingredients-section-table-product-row">
-                            <td>2</td>
+                            <td class="ingredients-section-table-number">2</td>
                             <td>Large eggs</td>
                             <td>3</td>
                         </tr>
                         <tr class="ingredients-section-table-product-row">
-                            <td>3</td>
+                            <td class="ingredients-section-table-number">3</td>
                             <td>All-purpose flour</td>
                             <td>3 cups</td>
                         </tr>
                         <tr class="ingredients-section-table-product-row">
-                            <td>4</td>
+                            <td class="ingredients-section-table-number">4</td>
                             <td>Flour for dredging</td>
                             <td>1/2 cup more</td>
                         </tr>
                         <tr class="ingredients-section-table-product-row">
-                            <td>5</td>
+                            <td class="ingredients-section-table-number">5</td>
                             <td>White sugar</td>
                             <td>3 tablespoons</td>
                         </tr>
                         <tr class="ingredients-section-table-product-row">
-                            <td>6</td>
+                            <td class="ingredients-section-table-number">6</td>
                             <td>Salt</td>
                             <td>Half teaspoon</td>
                         </tr>
                         <tr class="ingredients-section-table-product-row">
-                            <td>7</td>
+                            <td class="ingredients-section-table-number">7</td>
                             <td>Olive oil</td>
                             <td>2-3 tablespoons</td>
                         </tr>
                         <tr class="ingredients-section-table-product-row">
-                            <td>8</td>
+                            <td class="ingredients-section-table-number">8</td>
                             <td>Fresh fruit, jam, or sour cream for topping</td>
                             <td>To your taste</td>
                         </tr>
@@ -468,44 +469,73 @@
 
                 <ol class="directions-section-list">
                     <li class="directions-section-list-item">
-                        <span class="directions-section-list-span">Step 1</span>
+                        <span class="directions-section-list-span">
+                            <svg class="directions-section-icon" width="25" height="25" aria-label="Step icon">
+                                <use href="./images/icons.svg#icon-feet"></use>
+                            </svg>
+                            Step 1
+                        </span>
                         <p class="directions-section-list-text">
                             Beat eggs, salt and sugar together in a bowl until smooth.
                         </p>
                     </li>
 
                     <li class="directions-section-list-item">
-                        <span class="directions-section-list-span">Step 2</span>
+                        <span class="directions-section-list-span">
+                            <svg class="directions-section-icon" width="25" height="25" aria-label="Step icon">
+                                <use href="./images/icons.svg#icon-feet"></use>
+                            </svg>
+                            Step 2
+                        </span>
                         <p class="directions-section-list-text">
                             Add flour and farmer's cheese. Mix well until the dough is thick and sticky.
                         </p>
                     </li>
 
                     <li class="directions-section-list-item">
-                        <span class="directions-section-list-span">Step 3</span>
+                        <span class="directions-section-list-span">
+                            <svg class="directions-section-icon" width="25" height="25" aria-label="Step icon">
+                                <use href="./images/icons.svg#icon-feet"></use>
+                            </svg>
+                            Step 3
+                        </span>
                         <p class="directions-section-list-text">
                             Heat a skillet over medium heat, add 2-3 tablespoon oil.
                         </p>
                     </li>
 
                     <li class="directions-section-list-item">
-                        <span class="directions-section-list-span">Step 4</span>
+                        <span class="directions-section-list-span">
+                            <svg class="directions-section-icon" width="25" height="25" aria-label="Step icon">
+                                <use href="./images/icons.svg#icon-feet"></use>
+                            </svg>
+                            Step 4
+                        </span>
                         <p class="directions-section-list-text">
                             Divide dough into portions, form into balls and coat with some flour. With well-floured
-                            hands,
-                            flatten slightly to form into discs.
+                            hands, flatten slightly to form into discs.
                         </p>
                     </li>
 
                     <li class="directions-section-list-item">
-                        <span class="directions-section-list-span">Step 5</span>
+                        <span class="directions-section-list-span">
+                            <svg class="directions-section-icon" width="25" height="25" aria-label="Step icon">
+                                <use href="./images/icons.svg#icon-feet"></use>
+                            </svg>
+                            Step 5
+                        </span>
                         <p class="directions-section-list-text">
                             Once the oil is hot, place the discs and fry until golden brown, 3-5 minutes each side.
                         </p>
                     </li>
 
                     <li class="directions-section-list-item">
-                        <span class="directions-section-list-span">Step 6</span>
+                        <span class="directions-section-list-span">
+                            <svg class="directions-section-icon" width="25" height="25" aria-label="Step icon">
+                                <use href="./images/icons.svg#icon-feet"></use>
+                            </svg>
+                            Step 6
+                        </span>
                         <p class="directions-section-list-text">
                             Serve with your favorite toppings - jam, sour cream, or fruits and berries.
                         </p>
@@ -528,46 +558,82 @@
                 </p>
                 <ul class="tips-section-list">
                     <li class="tips-section-list-item">
+                        <span class="tips-section-list-span">
+                            <svg class="tips-section-icon" width="30" height="30" aria-label="Step tips">
+                                <use href="./images/icons.svg#icon-tips"></use>
+                            </svg>
+                            Separate mixtures:
+                        </span>
                         <p class="tips-section-list-text">
-                            Separate mixtures: Mix all dry ingredients (flour, sugar, baking powder, salt) in one bowl
+                            Mix all dry ingredients (flour, sugar, baking powder, salt) in one bowl
                             and all liquid ingredients
                             (eggs, milk, oil, melted butter) in another.
                         </p>
                     </li>
 
                     <li class="tips-section-list-item">
+                        <span class="tips-section-list-span">
+                            <svg class="tips-section-icon" width="30" height="30" aria-label="Step tips">
+                                <use href="./images/icons.svg#icon-tips"></use>
+                            </svg>
+                            Don't overmix:
+                        </span>
                         <p class="tips-section-list-text">
-                            Don't overmix: Combine liquid ingredients with dry ingredients, mixing just until combined.
+                            Combine liquid ingredients with dry ingredients, mixing just until combined.
                             Overmixing will make the
                             batter sticky.
                         </p>
                     </li>
 
                     <li class="tips-section-list-item">
+                        <span class="tips-section-list-span">
+                            <svg class="tips-section-icon" width="30" height="30" aria-label="Step tips">
+                                <use href="./images/icons.svg#icon-tips"></use>
+                            </svg>
+                            Consistency:
+                        </span>
                         <p class="tips-section-list-text">
-                            Consistency: The batter should be thicker than pancake batter, but not as thick as pancake
+                            The batter should be thicker than pancake batter, but not as thick as pancake
                             batter—it should spread a
                             little on the pan.
                         </p>
                     </li>
 
                     <li class="tips-section-list-item">
+                        <span class="tips-section-list-span">
+                            <svg class="tips-section-icon" width="30" height="30" aria-label="Step tips">
+                                <use href="./images/icons.svg#icon-tips"></use>
+                            </svg>
+                            Frying Pan:
+                        </span>
                         <p class="tips-section-list-text">
-                            Frying Pan: Fry the pancakes in a well-heated, dry, non-stick frying pan, taking care not to
+                            Fry the pancakes in a well-heated, dry, non-stick frying pan, taking care not to
                             burn them.
                         </p>
                     </li>
 
                     <li class="tips-section-list-item">
+                        <span class="tips-section-list-span">
+                            <svg class="tips-section-icon" width="30" height="30" aria-label="Step tips">
+                                <use href="./images/icons.svg#icon-tips"></use>
+                            </svg>
+                            Temperature:
+                        </span>
                         <p class="tips-section-list-text">
-                            Temperature: Start frying on low heat, then increase to medium.
+                            Start frying on low heat, then increase to medium.
                             Flipping: Flip the pancake when bubbles appear on the surface.
                         </p>
                     </li>
 
                     <li class="tips-section-list-item">
+                        <span class="tips-section-list-span">
+                            <svg class="tips-section-icon" width="30" height="30" aria-label="Step tips">
+                                <use href="./images/icons.svg#icon-tips"></use>
+                            </svg>
+                            Oil:
+                        </span>
                         <p class="tips-section-list-text">
-                            Oil: Do not add too much oil. Grease the pan once with butter or oil before frying, or wipe
+                            Do not add too much oil. Grease the pan once with butter or oil before frying, or wipe
                             it with a paper towel.
                         </p>
                     </li>
@@ -582,43 +648,162 @@
                     Tell us how your pancakes turned out
                 </h2>
                 <p class="feedback-section-text">
-                    Share your experience with this recipe: what you changed, how it turned out, and what you served it
-                    with.
-                    Your feedback helps other home cooks.
+                    Share your experience with this recipe: what you changed, how it turned out, and what you
+                    served it with. Your feedback helps other home cooks and makes this recipe even better.
                 </p>
 
-                <form class="feedback-section-form" name="feedback_form" autocomplete="off" novalidate>
-                    <label class="feedback-section-form-label">
-                        Your name*
-                        <input class="feedback-section-form-input" type="text" name="username"
-                            placeholder="Enter your name" minlength="2" maxlength="20" required>
-                    </label>
+                <div class="feedback-section-layout">
+                    <!-- LEFT: FORM -->
+                    <div class="feedback-section-left">
+                        <form class="feedback-section-form" name="feedback_form" autocomplete="off" novalidate>
+                            <label class="feedback-section-form-label">
+                                Your name*
+                                <input class="feedback-section-form-input" type="text" name="username"
+                                    placeholder="Enter your name" minlength="2" maxlength="20" required />
+                            </label>
 
-                    <label class="feedback-section-form-label">
-                        Your email*
-                        <input class="feedback-section-form-input" type="email" name="user_email"
-                            placeholder="Enter your email" minlength="5" maxlength="80" required>
-                    </label>
+                            <label class="feedback-section-form-label">
+                                Your email*
+                                <input class="feedback-section-form-input" type="email" name="user_email"
+                                    placeholder="Enter your email" minlength="5" maxlength="80" required />
+                            </label>
 
-                    <label class="feedback-section-form-label">
-                        Did you like the dish?*
-                        <select class="feedback-section-form-input" required>
-                            <option value="0">I loved it – definitely recommend</option>
-                            <option value="1">It was good – I can recommend it</option>
-                            <option value="2">It was ok – not sure I’d recommend</option>
-                            <option value="3">I didn’t like it – wouldn’t recommend</option>
-                        </select>
-                    </label>
+                            <label class="feedback-section-form-label">
+                                Did you like the dish?
+                                <div class="feedback-select-wrapper">
+                                    <select class="feedback-section-form-input feedback-select" name="dish_opinion"
+                                        required>
+                                        <option value="0">I loved it – definitely recommend</option>
+                                        <option value="1">It was good – I can recommend it</option>
+                                        <option value="2">It was ok – not sure I’d recommend</option>
+                                        <option value="3">I didn’t like it – wouldn’t recommend</option>
+                                    </select>
 
-                    <label class="feedback-section-form-label">
-                        Your feedback*
-                        <textarea class="feedback-section-form-input" name="description" rows="7"
-                            placeholder="Write to us about this dish" minlength="10" maxlength="500"
-                            required></textarea>
-                    </label>
+                                    <svg class="feedback-select-arrow" width="18" height="18" aria-hidden="true">
+                                        <use href="./images/icons.svg#icon-arrow"></use>
+                                    </svg>
+                                </div>
+                            </label>
 
-                    <button class="feedback-section-form-button" type="submit">Send feedback</button>
-                </form>
+                            <p class="feedback-rating-title">Your rating for this recipe</p>
+                            <div class="feedback-rating-group">
+                                <label class="feedback-rating-option">
+                                    <input class="feedback-rating-input" type="radio" name="rating" value="1" />
+                                    <span class="feedback-rating-value">1</span>
+                                </label>
+
+                                <label class="feedback-rating-option">
+                                    <input class="feedback-rating-input" type="radio" name="rating" value="2" />
+                                    <span class="feedback-rating-value">2</span>
+                                </label>
+
+                                <label class="feedback-rating-option">
+                                    <input class="feedback-rating-input" type="radio" name="rating" value="3" />
+                                    <span class="feedback-rating-value">3</span>
+                                </label>
+
+                                <label class="feedback-rating-option">
+                                    <input class="feedback-rating-input" type="radio" name="rating" value="4" />
+                                    <span class="feedback-rating-value">4</span>
+                                </label>
+
+                                <label class="feedback-rating-option">
+                                    <input class="feedback-rating-input" type="radio" name="rating" value="5" checked />
+                                    <span class="feedback-rating-value">5</span>
+                                </label>
+                            </div>
+
+                            <label class="feedback-section-form-label">
+                                Your feedback*
+                                <textarea class="feedback-section-form-input" name="description" rows="7"
+                                    placeholder="Write to us about this dish" minlength="10" maxlength="500"
+                                    required></textarea>
+                            </label>
+
+                            <!-- Consent checkbox -->
+                            <label class="feedback-consent">
+                                <input class="feedback-consent-input" type="checkbox" name="consent" value="yes"
+                                    required />
+
+                                <span class="feedback-consent-box">
+                                    <svg class="feedback-consent-check" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-check"></use>
+                                    </svg>
+                                </span>
+
+                                <span class="feedback-consent-text">
+                                    I agree to the processing of my personal data in accordance with the
+                                    <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+                                </span>
+                            </label>
+
+                            <button class="feedback-section-form-button" type="submit" disabled>
+                                Send feedback
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- RIGHT: RATING + IMAGE -->
+                    <div class="feedback-section-right" aria-label="Pancakes feedback highlight">
+                        <div class="feedback-highlight-card">
+                            <div class="feedback-highlight-rating-row">
+                                <p class="feedback-highlight-rating-number">4.8</p>
+                                <p class="feedback-highlight-rating-scale">/5 average rating</p>
+                            </div>
+
+                            <div class="feedback-highlight-stars" aria-hidden="true">
+                                <svg class="feedback-star feedback-star--active" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg>
+                                <svg class="feedback-star feedback-star--active" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg>
+                                <svg class="feedback-star feedback-star--active" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg>
+                                <svg class="feedback-star feedback-star--active" width="20" height="20">
+                                    <use href="./images/icons.svg#icon-star"></use>
+                                </svg>
+
+
+                                <span class="feedback-star-half">
+                                    <svg class="feedback-star" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-star"></use>
+                                    </svg>
+
+                                    <svg class="feedback-star feedback-star--active feedback-star--half-fill" width="20"
+                                        height="20">
+                                        <use href="./images/icons.svg#icon-star"></use>
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <p class="feedback-highlight-text">
+                                This recipe is a favorite among our readers: most home cooks praise its
+                                quick preparation, tender texture, and perfectly balanced sweetness.
+                                Try it once and you’ll probably add it to your regular breakfast menu.
+                            </p>
+                        </div>
+
+                        <picture>
+                            <source srcset="
+                                    ./images/feedback/cheese-pancakes-served-with-berries-desk.jpg     1x,
+                                    ./images/feedback/cheese-pancakes-served-with-berries-desk@2x.jpg  2x
+                                    " media="(min-width: 1158px)" />
+                            <source srcset="
+                                    ./images/feedback/cheese-pancakes-served-with-berries-tab.jpg     1x,
+                                    ./images/feedback/cheese-pancakes-served-with-berries-tab@2x.jpg  2x
+                                    " media="(min-width: 768px)" />
+                            <source srcset="
+                                    ./images/feedback/cheese-pancakes-served-with-berries-mobile.jpg     1x,
+                                    ./images/feedback/cheese-pancakes-served-with-berries-mobile@2x.jpg  2x
+                                    " media="(max-width: 767px)" />
+                            <img class="feedback-section-image"
+                                src="./images/feedback/cheese-pancakes-served-with-berries-tab.jpg"
+                                alt="Sweet cheese pancakes served with berries" />
+                        </picture>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -631,11 +816,25 @@
                     <li class="other-recipes-section-list-item">
                         <a href="#" class="other-recipes-link">
                             <div class="other-recipes-thumb">
-                                <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-                                    alt="Sweet cheese pancakes served with berries" width="450">
+                                <picture>
+                                    <source srcset="
+                                            ./images/other-recipes/banana-oat-pancakes-desk.jpg     1x,
+                                            ./images/other-recipes/banana-oat-pancakes-desk@2x.jpg  2x
+                                            " media="(min-width: 1158px)" />
+                                    <source srcset="
+                                            ./images/other-recipes/banana-oat-pancakes-tab.jpg     1x,
+                                            ./images/other-recipes/banana-oat-pancakes-tab@2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                                    <source srcset="
+                                            ./images/other-recipes/banana-oat-pancakes-mobile.jpg     1x,
+                                            ./images/other-recipes/banana-oat-pancakes-mobile@2x.jpg  2x
+                                            " media="(max-width: 767px)" />
+                                    <img src="./images/other-recipes/banana-oat-pancakes-mobile.jpg"
+                                        alt="Sweet cheese pancakes served with berries" />
+                                </picture>
 
                                 <div class="other-recipes-section-list-div">
-                                    <h3>Banana oat pancakes</h3>
+                                    <h3 class="other-recipes-section-list-div-title">Banana oat pancakes</h3>
                                     <p>Author: Emma Stone</p>
                                 </div>
 
@@ -646,6 +845,9 @@
                                         Delicate pancakes with oats and ripe bananas. A great option for a quick,
                                         healthy breakfast without added sugar.
                                     </p>
+                                    <svg class="tips-section-icon" width="60" height="60" aria-label="Step tips">
+                                        <use href="./images/icons.svg#icon-foot-bath"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </a>
@@ -654,11 +856,25 @@
                     <li class="other-recipes-section-list-item">
                         <a href="#" class="other-recipes-link">
                             <div class="other-recipes-thumb">
-                                <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-                                    alt="Sweet cheese pancakes served with berries" width="450">
+                                <picture>
+                                    <source srcset="
+                                            ./images/other-recipes/classic-buttermilk-pancakes-desk.jpg     1x,
+                                            ./images/other-recipes/classic-buttermilk-pancakes-desk@2x.jpg  2x
+                                            " media="(min-width: 1158px)" />
+                                    <source srcset="
+                                            ./images/other-recipes/classic-buttermilk-pancakes-tab.jpg     1x,
+                                            ./images/other-recipes/classic-buttermilk-pancakes-tab@2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                                    <source srcset="
+                                            ./images/other-recipes/classic-buttermilk-pancakes-mobile.jpg     1x,
+                                            ./images/other-recipes/classic-buttermilk-pancakes-mobile@2x.jpg  2x
+                                            " media="(max-width: 767px)" />
+                                    <img src="./images/other-recipes/classic-buttermilk-pancakes-mobile.jpg"
+                                        alt="Sweet cheese pancakes served with berries" />
+                                </picture>
 
                                 <div class="other-recipes-section-list-div">
-                                    <h3>Classic buttermilk pancakes</h3>
+                                    <h3 class="other-recipes-section-list-div-title">Classic buttermilk pancakes</h3>
                                     <p>Author: Daniel Green</p>
                                 </div>
 
@@ -669,6 +885,9 @@
                                         Airy, fluffy pancakes with a light buttery aroma. Serve with maple syrup,
                                         berries, or a knob of butter.
                                     </p>
+                                    <svg class="tips-section-icon" width="60" height="60" aria-label="Step tips">
+                                        <use href="./images/icons.svg#icon-foot-bath"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </a>
@@ -677,11 +896,25 @@
                     <li class="other-recipes-section-list-item">
                         <a href="#" class="other-recipes-link">
                             <div class="other-recipes-thumb">
-                                <img src="https://ac.goit.global/fullstack/html-css-v2/module-1/autocheck/pancakes.jpg"
-                                    alt="Sweet cheese pancakes served with berries" width="450">
+                                <picture>
+                                    <source srcset="
+                                            ./images/other-recipes/chocolate-chip-pancakes-desk.jpg     1x,
+                                            ./images/other-recipes/chocolate-chip-pancakes-desk@2x.jpg  2x
+                                            " media="(min-width: 1158px)" />
+                                    <source srcset="
+                                            ./images/other-recipes/chocolate-chip-pancakes-tab.jpg     1x,
+                                            ./images/other-recipes/chocolate-chip-pancakes-tab@2x.jpg  2x
+                                            " media="(min-width: 768px)" />
+                                    <source srcset="
+                                            ./images/other-recipes/chocolate-chip-pancakes-mobile.jpg     1x,
+                                            ./images/other-recipes/chocolate-chip-pancakes-mobile@2x.jpg  2x
+                                            " media="(max-width: 767px)" />
+                                    <img src="./images/other-recipes/chocolate-chip-pancakes-mobile.jpg"
+                                        alt="Sweet cheese pancakes served with berries" />
+                                </picture>
 
                                 <div class="other-recipes-section-list-div">
-                                    <h3>Chocolate chip pancakes</h3>
+                                    <h3 class="other-recipes-section-list-div-title">Chocolate chip pancakes</h3>
                                     <p>Author: Olivia Brown</p>
                                 </div>
 
@@ -689,9 +922,12 @@
                                     <h3>Chocolate chip pancakes</h3>
                                     <p>Author: Olivia Brown</p>
                                     <p>
-                                        Soft pancakes with melting chocolate chips inside — a perfect treat for kids and
+                                        Soft pancakes with melting chocolate chips inside – a perfect treat for kids and
                                         anyone with a sweet tooth.
                                     </p>
+                                    <svg class="tips-section-icon" width="60" height="60" aria-label="Step tips">
+                                        <use href="./images/icons.svg#icon-foot-bath"></use>
+                                    </svg>
                                 </div>
                             </div>
                         </a>
@@ -705,10 +941,21 @@
             <div class="container navigation-section-container">
                 <ul class="navigation-section-list">
                     <li class="navigation-section-list-item">
-                        <a class="navigation-section-list-item-link" href="#">Previous recipe</a>
+                        <a class="navigation-section-list-item-link" href="#">
+                            <svg class="navigation-arrow navigation-arrow--left" width="18" height="18">
+                                <use href="./images/icons.svg#icon-arrow-bottom"></use>
+                            </svg>
+                            Previous recipe
+                        </a>
                     </li>
+
                     <li class="navigation-section-list-item">
-                        <a class="navigation-section-list-item-link" href="#">Next recipe</a>
+                        <a class="navigation-section-list-item-link" href="#">
+                            Next recipe
+                            <svg class="navigation-arrow navigation-arrow--right" width="18" height="18">
+                                <use href="./images/icons.svg#icon-arrow-bottom"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -741,26 +988,27 @@
                     </ul>
                 </nav>
 
-                <ul class="footer-social-list">
-                    <li class="hero-section-info-list-item">
-                        <a class="link-icon" href="#" target="_blank">
-                            <svg class="footer-icon" width="20" height="20">
+                <ul class="mobile-menu-social-list">
+                    <li class="mobile-menu-social-list-item">
+                        <a class="mobile-menu-social-list-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg class="mobile-menu-social-list-icon" width="20" height="20" aria-label="Icon Facebook">
                                 <use href="./images/icons.svg#icon-facebook-logo"></use>
                             </svg>
                         </a>
                     </li>
 
-                    <li class="hero-section-info-list-item">
-                        <a class="link-icon" href="#" target="_blank">
-                            <svg class="footer-icon" width="20" height="20">
+                    <li class="mobile-menu-social-list-item">
+                        <a class="mobile-menu-social-list-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg class="mobile-menu-social-list-icon" width="20" height="20"
+                                aria-label="Icon Instagram">
                                 <use href="./images/icons.svg#icon-instagram-logo"></use>
                             </svg>
                         </a>
                     </li>
 
-                    <li class="hero-section-info-list-item">
-                        <a class="link-icon" href="#" target="_blank">
-                            <svg class="footer-icon" width="27" height="27">
+                    <li class="mobile-menu-social-list-item">
+                        <a class="mobile-menu-social-list-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg class="mobile-menu-social-list-icon" width="27" height="27" aria-label="Icon Youtube">
                                 <use href="./images/icons.svg#icon-youtube-logo"></use>
                             </svg>
                         </a>
@@ -771,6 +1019,7 @@
     </main>
 
     <script src="./js/header.js"></script>
+    <script src="./js/feedback-form.js"></script>
 </body>
 
 </html>
