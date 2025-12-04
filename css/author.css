@@ -50,11 +50,13 @@
   font-size: 14px;
   color: #6b7280;
   margin-bottom: 12px;
+  min-width: 288px;
 }
 
 .author-description {
   color: #4b5563;
   margin-bottom: 16px;
+  min-width: 288px;
 }
 
 .author-section-link {
@@ -62,7 +64,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px 0;
-  min-width: 320px;
+  min-width: 288px;
   font-size: 16px;
   letter-spacing: 0.03em;
   border-radius: 999px;

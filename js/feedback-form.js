@@ -43,6 +43,5 @@
   form.addEventListener('input', checkValidity);
   form.addEventListener('change', checkValidity);
 
-  // початкова перевірка
   checkValidity();
 })();

@@ -1,4 +1,3 @@
-// js/header.js
 (() => {
   const refs = {
     openBtn: document.querySelector('[data-menu-open]'),
