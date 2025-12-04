@@ -32,26 +32,26 @@ This project showcases clean HTML, modular CSS, and semantic markup.
 
 ## 📄 **Structured Content**
 
-The page includes:
+**The page includes:**
 
-- **Photo gallery**
-- **Author section**
-- **Ingredients table**
-- **Step-by-step directions**
-- **Helpful cooking tips**
-- **Feedback form** with validation
-- **Related recipes carousel**
+- Photo gallery
+- Author section
+- Ingredients table
+- Step-by-step directions
+- Helpful cooking tips
+- Feedback form with validation
+- Related recipes carousel
 
 ## 🚀 Technologies Used
 
-- **HTML5 (semantic)**
-- **CSS3 (Flexbox, Grid)**
-- **Responsive Images (picture, source)**
-- **SVG Icons**
-- **Modern Normalize**
-- **Favicon (SVG → ICO)**
-- **JavaScript for menu & form validation**
-- **Open Graph / Twitter meta tags**
+- HTML5 (semantic)
+- CSS3 (Flexbox, Grid)
+- Responsive Images (picture, source)
+- SVG Icons
+- Modern Normalize
+- Favicon (SVG → ICO)
+- JavaScript for menu & form validation
+- Open Graph / Twitter meta tags
 
 ## 👩‍💻 Author
 
