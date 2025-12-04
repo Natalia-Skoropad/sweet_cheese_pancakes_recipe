@@ -5,7 +5,7 @@ This project showcases clean HTML, modular CSS, and semantic markup.
 
 ---
 
-### ✨ **Features**
+## ✨ **Features**
 
 - Responsive layout — mobile, tablet, desktop
 - Recipe details — ingredients, directions, tips
@@ -16,21 +16,21 @@ This project showcases clean HTML, modular CSS, and semantic markup.
 - Accessible markup
 - Optimized for GitHub Pages
 
-### 🔍 **SEO & Social Preview**
+## 🔍 **SEO & Social Preview**
 
 - Open Graph tags for Facebook, LinkedIn, Telegram
 - Twitter card metadata
 - Custom favicon (SVG)
 - Descriptive meta information
 
-### ♿ **Accessibility**
+## ♿ **Accessibility**
 
 - Semantic HTML
 - ARIA labels on icons and controls
 - Correct heading structure
 - Keyboard-friendly mobile menu
 
-### 📄 **Structured Content**
+## 📄 **Structured Content**
 
 The page includes:
 
@@ -42,7 +42,7 @@ The page includes:
 - **Feedback form** with validation
 - **Related recipes carousel**
 
-## 🛠️ Technologies Used
+## 🚀 Technologies Used
 
 - **HTML5 (semantic)**
 - **CSS3 (Flexbox, Grid)**
@@ -59,4 +59,4 @@ The page includes:
 Frontend Developer | UX/UI Designer
 
 - GitHub: https://github.com/natalia-skoropad
-- Portfolio: https://portfolio-nataliia-skoropad.vercel.app/ ❤️
+- Portfolio: https://portfolio-nataliia-skoropad.vercel.app ❤️
