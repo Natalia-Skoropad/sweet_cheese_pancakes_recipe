@@ -20,6 +20,10 @@
   box-shadow: 0 14px 32px rgba(15, 23, 42, 0.18);
 }
 
+.other-recipes-section-list-item img {
+  width: 288px;
+}
+
 .other-recipes-section-list-item:hover,
 .other-recipes-section-list-item:focus-within {
   transform: translateY(-4px);
@@ -192,6 +196,10 @@
     gap: 25px;
     justify-content: flex-end;
   }
+
+  .other-recipes-section-list-item img {
+    width: 376px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -205,5 +213,9 @@
 
   .other-recipes-section-list-item-desk {
     display: block;
+  }
+
+  .other-recipes-section-list-item img {
+    width: 373px;
   }
 }

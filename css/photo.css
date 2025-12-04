@@ -18,6 +18,10 @@
   box-shadow: 0 16px 40px rgba(15, 23, 42, 0.22);
 }
 
+.photo-section-list-item img {
+  width: 288px;
+}
+
 @media screen and (min-width: 768px) {
   .photo-section-list {
     flex-direction: row;
@@ -26,6 +30,10 @@
 
   .photo-section-list-item {
     width: calc((100% - 16px) / 2);
+  }
+
+  .photo-section-list-item img {
+    width: 376px;
   }
 }
 
@@ -36,5 +44,9 @@
 
   .photo-section-list {
     gap: 20px;
+  }
+
+  .photo-section-list-item img {
+    width: 373px;
   }
 }
