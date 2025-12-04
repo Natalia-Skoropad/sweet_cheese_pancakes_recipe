@@ -1,11 +1,12 @@
 .other-recipes-title {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .other-recipes-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 25px;
 }
 
 .other-recipes-section-list-item {
@@ -27,7 +28,6 @@
 
 .other-recipes-link {
   display: block;
-  height: 100%;
 }
 
 .other-recipes-thumb {
@@ -95,6 +95,71 @@
   display: none;
 }
 
+.other-recipes-section-list-item-tab,
+.other-recipes-section-list-item-desk {
+  display: none;
+}
+
+/* ===== PAGINATION ===== */
+
+.other-recipes-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.other-recipes-bullet {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background-color: #e5e7eb;
+}
+
+.other-recipes-bullet--active {
+  width: 18px;
+  background-color: #f97316;
+}
+
+/* ===== arrow ===== */
+.other-recipes-controls {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.other-recipes-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background-color: #f97316;
+
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.other-recipes-arrow-icon {
+  fill: #ffffff;
+}
+
+.other-recipes-arrow:hover,
+.other-recipes-arrow:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+}
+
+.other-recipes-arrow-icon--prev {
+  transform: rotate(90deg);
+}
+
+.other-recipes-arrow-icon--next {
+  transform: rotate(-90deg);
+}
+
 @media screen and (min-width: 768px) {
   .other-recipes-list {
     flex-direction: row;
@@ -109,6 +174,16 @@
   .other-recipes-section-list-overlay svg {
     display: block;
   }
+
+  .other-recipes-section-list-item-tab {
+    display: block;
+  }
+
+  .other-recipes-controls {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -118,5 +193,9 @@
 
   .other-recipes-list {
     gap: 20px;
+  }
+
+  .other-recipes-section-list-item-desk {
+    display: block;
   }
 }
