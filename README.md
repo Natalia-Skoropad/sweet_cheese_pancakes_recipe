@@ -1,22 +1,20 @@
 # 🥞 Sweet Cheese Pancakes | Recipe Page
 
-A fully responsive and SEO-optimized webpage with a cheese pancake recipe. This
-project showcases clean HTML, modular CSS, and semantic markup.
+A fully responsive and SEO-optimized webpage with a cheese pancake recipe. <br/>
+This project showcases clean HTML, modular CSS, and semantic markup.
 
 ---
 
-## 🌟 Features
+### ✨ **Features**
 
-### ✅ **Responsive layout**
-
-- Mobile-first design
-- Adaptive images (`<picture>` + `srcset`)
-- Flexible layout structure across all breakpoints
-
-### 🎨 **Modern UI**
-
-- Soft color palette
-- Smooth hover interactions
+- Responsive layout — mobile, tablet, desktop
+- Recipe details — ingredients, directions, tips
+- Breadcrumb navigation
+- Adaptive images (srcset, picture)
+- Hover overlays for recipe cards
+- CSS-only carousel (no JS)
+- Accessible markup
+- Optimized for GitHub Pages
 
 ### 🔍 **SEO & Social Preview**
 
@@ -36,19 +34,22 @@ project showcases clean HTML, modular CSS, and semantic markup.
 
 The page includes:
 
+- **Photo gallery**
+- **Author section**
 - **Ingredients table**
 - **Step-by-step directions**
 - **Helpful cooking tips**
-- **Author section**
-- **Photo gallery**
 - **Feedback form** with validation
 - **Related recipes carousel**
 
-## 🧰 Technologies Used
+## 🛠️ Technologies Used
 
 - **HTML5 (semantic)**
-- **CSS3 (modular, BEM-style classes)**
-- **Responsive images (`<picture>`, `srcset`)**
+- **CSS3 (Flexbox, Grid)**
+- **Responsive Images (picture, source)**
+- **SVG Icons**
+- **Modern Normalize**
+- **Favicon (SVG → ICO)**
 - **JavaScript for menu & form validation**
 - **Open Graph / Twitter meta tags**
 
@@ -58,4 +59,4 @@ The page includes:
 Frontend Developer | UX/UI Designer
 
 - GitHub: https://github.com/natalia-skoropad
-- Portfolio: _coming soon_ ❤️
+- Portfolio: https://portfolio-nataliia-skoropad.vercel.app/ ❤️
