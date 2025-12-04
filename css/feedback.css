@@ -334,6 +334,7 @@
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0 16px 36px rgba(15, 23, 42, 0.22);
+    min-height: 410px;
   }
 }
 
@@ -344,6 +345,6 @@
   }
 
   .feedback-section-image {
-    max-height: 440px;
+    min-height: 460px;
   }
 }

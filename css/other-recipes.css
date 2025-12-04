@@ -101,7 +101,6 @@
 }
 
 /* ===== PAGINATION ===== */
-
 .other-recipes-pagination {
   display: flex;
   justify-content: center;
@@ -114,6 +113,15 @@
   height: 7px;
   border-radius: 999px;
   background-color: #e5e7eb;
+  transition: transform 150ms ease, box-shadow 150ms ease,
+    background-color 150ms ease;
+}
+
+.other-recipes-bullet:hover,
+.other-recipes-bullet:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+  background-color: #f97316;
 }
 
 .other-recipes-bullet--active {

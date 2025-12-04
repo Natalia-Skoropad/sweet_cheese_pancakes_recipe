@@ -152,7 +152,7 @@
 
     <main>
         <!-- Breadcrumbs section -->
-        <section class="breadcrumbs-section">
+        <nav class="breadcrumbs-section" aria-label="Breadcrumb">
             <div class="container breadcrumbs-section-container">
                 <ul class="breadcrumbs-section-list">
                     <li class="breadcrumbs-section-list-item">
@@ -174,7 +174,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </nav>
 
         <!-- Hero section -->
         <section class="hero-section">
@@ -257,7 +257,7 @@
                     <ul class="hero-section-social-list">
                         <li>
                             <a class="link-icon" href="#" target="_blank" rel="noopener noreferrer">
-                                <svg width="20" height="20" aria-label="Icon Twitter">
+                                <svg width="20" height="20" aria-label="Icon Facebook">
                                     <use href="./images/icons.svg#icon-facebook-logo"></use>
                                 </svg>
                             </a>
@@ -418,7 +418,7 @@
                 <table class="ingredients-section-table">
                     <thead class="ingredients-section-table-thead">
                         <tr>
-                            <th scope="col" rowspan="2">
+                            <th scope="col">
                                 <svg class="ingredients-section-icon" width="30" height="30" aria-label="Ingredients">
                                     <use href="./images/icons.svg#icon-ingredients"></use>
                                 </svg>
@@ -688,22 +688,24 @@
                                     placeholder="Enter your email" minlength="5" maxlength="80" required />
                             </label>
 
-                            <label class="feedback-section-form-label">
+                            <label class="feedback-section-form-label" for="dish_opinion">
                                 Did you like the dish?
-                                <div class="feedback-select-wrapper">
-                                    <select class="feedback-section-form-input feedback-select" name="dish_opinion"
-                                        required>
-                                        <option value="0">I loved it – definitely recommend</option>
-                                        <option value="1">It was good – I can recommend it</option>
-                                        <option value="2">It was ok – not sure I'd recommend</option>
-                                        <option value="3">I didn't like it – wouldn't recommend</option>
-                                    </select>
-
-                                    <svg class="feedback-select-arrow" width="18" height="18" aria-hidden="true">
-                                        <use href="./images/icons.svg#icon-arrow"></use>
-                                    </svg>
-                                </div>
                             </label>
+
+                            <div class="feedback-select-wrapper">
+                                <select class="feedback-section-form-input feedback-select" name="dish_opinion"
+                                    id="dish_opinion" required>
+                                    <option value="" disabled selected>Choose your opinion</option>
+                                    <option value="love">I loved it – definitely recommend</option>
+                                    <option value="good">It was good – I can recommend it</option>
+                                    <option value="ok">It was ok – not sure I'd recommend</option>
+                                    <option value="dislike">I didn't like it – wouldn't recommend</option>
+                                </select>
+
+                                <svg class="feedback-select-arrow" width="18" height="18" aria-hidden="true">
+                                    <use href="./images/icons.svg#icon-arrow"></use>
+                                </svg>
+                            </div>
 
                             <p class="feedback-rating-title">Your rating for this recipe</p>
                             <div class="feedback-rating-group">
@@ -764,7 +766,7 @@
                     </div>
 
                     <!-- RIGHT: RATING + IMAGE -->
-                    <div class="feedback-section-right" aria-label="Pancakes feedback highlight">
+                    <div class="feedback-section-right" role="complementary" aria-label="Pancakes feedback highlight">
                         <div class="feedback-highlight-card">
                             <div class="feedback-highlight-rating-row">
                                 <p class="feedback-highlight-rating-number">4.8</p>
@@ -987,7 +989,7 @@
         </section>
 
         <!-- Navigation buttons section -->
-        <section class="navigation-section">
+        <nav class="navigation-section" aria-label="Recipe navigation">
             <div class="container navigation-section-container">
                 <ul class="navigation-section-list">
                     <li class="navigation-section-list-item">
@@ -1009,7 +1011,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </nav>
 
         <!-- Footer -->
         <footer class="footer">
