@@ -1,9 +1,7 @@
-# 🥞 Sweet Cheese Pancakes — Recipe Page
+# 🥞 Sweet Cheese Pancakes | Recipe Page
 
-A fully responsive, accessible, and SEO-optimized recipe webpage featuring
-gentle, lightly sweet cottage cheese pancakes.  
-This project demonstrates clean HTML, modular CSS, semantic markup, and
-attention to modern frontend best practices.
+A fully responsive and SEO-optimized webpage with a cheese pancake recipe. This
+project showcases clean HTML, modular CSS, and semantic markup.
 
 ---
 
@@ -19,8 +17,6 @@ attention to modern frontend best practices.
 
 - Soft color palette
 - Smooth hover interactions
-- Clear visual hierarchy
-- Consistent typography (Montserrat)
 
 ### 🔍 **SEO & Social Preview**
 
@@ -34,7 +30,6 @@ attention to modern frontend best practices.
 - Semantic HTML
 - ARIA labels on icons and controls
 - Correct heading structure
-- High-contrast improvements
 - Keyboard-friendly mobile menu
 
 ### 📄 **Structured Content**
@@ -48,18 +43,6 @@ The page includes:
 - **Photo gallery**
 - **Feedback form** with validation
 - **Related recipes carousel**
-
----
-
-## 📁 Project Structure
-
-sweet_cheese_pancakes_recipe/ │ ├── index.html ├── recipe.html │ ├── css/ │ ├──
-styles.css │ ├── hero.css │ ├── feedback.css │ ├── tips.css │ ├──
-ingredients.css │ ├── breadcrumbs.css │ ├── author.css │ ├── photo.css │ ├──
-mobile-menu.css │ ├── other-recipes.css │ ├── navigation.css │ ├── js/ │ ├──
-header.js │ ├── feedback-form.js │ ├── images/ │ ├── favicon.svg │ ├──
-og-image.jpg │ ├── home/ │ ├── photos/ │ ├── author/ │ ├── other-recipes/ │ └──
-icons.svg │ └── images/readme-banner.svg
 
 ## 🧰 Technologies Used
 
