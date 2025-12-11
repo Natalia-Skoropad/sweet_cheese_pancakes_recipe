@@ -1,11 +1,17 @@
+html {
+  text-rendering: optimizeLegibility;
+}
+
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 
   color: #2e2f42;
   background-color: #fffaf5;
-  margin: 0;
 }
 
 .hero-section,
@@ -55,4 +61,45 @@ button {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #f97316;
+}
+
+.sticky-widget-div {
+  position: fixed;
+  right: 16px;
+  bottom: 50px;
+  z-index: 1600;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 150ms ease;
+}
+
+.sticky-widget-div.sticky-widget-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.sticky-widget-div-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 35px;
+  background: #111827;
+  display: grid;
+  place-items: center;
+  border: none;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.sticky-widget-div-button:hover,
+.sticky-widget-div-button:focus-visible {
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.4);
+  transform: translateY(-2px);
+}
+
+.sticky-widget-div-button svg {
+  fill: #fffaf5;
+  transform: rotate(-180deg);
 }
